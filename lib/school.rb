@@ -22,7 +22,7 @@ class School
   end
   
   def sort
-    @roster.each do |grade, students|
+    @roster.transform_values! do |grade, students|
       students.sort
     end
   end
